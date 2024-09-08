@@ -27,4 +27,12 @@ header {
     color: #fff;
     text-decoration: none;
   }
-  
+
+  .text-button {
+    background: none;
+    border: none;
+    color: inherit; /* Inherit the text color */
+    font: inherit; /* Inherit the font settings */
+    padding: 0;
+    cursor: pointer;
+  }
