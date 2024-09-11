@@ -1,0 +1,68 @@
+/* General page styling */
+.project-detail-container {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  /* Project Title */
+  .project-detail-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Project Description */
+  .project-detail-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Project Image */
+  .project-detail-container img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Extra Images (Gallery) container */
+  .extra-images {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Dynamically resize based on number of images */
+  .extra-images img {
+    width: auto;            
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* "Project Not Found" Message */
+  .not-found p {
+    font-size: 1.2em;
+    color: #e74c3c;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .project-detail-container img {
+      max-width: 80%;
+    }
+  
+    /* Adjust image size on smaller screens */
+    .extra-images img {
+      flex-basis: calc(50% - 10px); /* Display two images per row on smaller screens */
+    }
+  
+    .extra-images img:nth-child(3) {
+      flex-basis: 100%;  /* For 3rd image, take full width on mobile */
+    }
+  }
+  

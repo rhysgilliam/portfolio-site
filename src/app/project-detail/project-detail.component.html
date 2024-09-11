@@ -1,0 +1,14 @@
+<div class="project-detail-container" *ngIf="project">
+    <h1>{{ project.title }}</h1>
+    <img [src]="project.imageUrl" alt="{{ project.title }}">
+    <p [innerHTML]="project.longDescription"></p>
+    <div class="extra-images">
+        <div *ngFor="let url of project.extraPictureUrls">
+            <img [src]="url">
+        </div>
+    </div> 
+  </div>
+<div class="not-found" *ngIf="!project">
+    <p>Project not found.</p>
+</div>
+  
