@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+      // Preserving the path
+      var path = window.location.pathname.replace('/portfolio-site', '');
+      // Construct the URL to redirect to
+      var newUrl = '/portfolio-site/index.html';
+      // Redirect to the index.html with the original path appended as a hash
+      window.location.replace(newUrl + '#' + path);
+    </script>
+  </head>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>
