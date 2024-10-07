@@ -1,26 +1,40 @@
 <div class="portfolio">
-    <h2>My Projects</h2>
-    <div class="projects-list">
-      <div *ngFor="let project of projects" class="project-card">
-        <img [src]="project.imageUrl" alt="{{ project.title }}">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <a *ngIf="project.externalLink; else internalLink" 
-          [href]="project.externalLink" 
-          target="_blank" 
-          rel="noopener noreferrer">
-            View Project
+  <h2>My Projects</h2>
+  <div class="projects-list">
+    <ng-container *ngFor="let project of projects">
+      <!-- External Link -->
+      <a *ngIf="project.externalLink; else internalLink"
+         [href]="project.externalLink"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="project-card-link">
+        <div class="project-card">
+          <img [src]="project.imageUrl" alt="{{ project.title }}">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <div class="project-tags">
+            <div *ngFor="let tag of project.tags" class="tag">
+              <span>{{ tag }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <!-- Internal routing -->
+      <ng-template #internalLink>
+        <a [routerLink]="project.link" class="project-card-link">
+          <div class="project-card">
+            <img [src]="project.imageUrl" alt="{{ project.title }}">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <div class="project-tags">
+              <div *ngFor="let tag of project.tags" class="tag">
+                <span>{{ tag }}</span>
+              </div>
+            </div>
+          </div>
         </a>
-        <!-- Internal routing -->
-        <ng-template #internalLink>
-          <a [routerLink]="project.link">View Project</a>
-        </ng-template>
-        <div class="project-tags">
-          <div *ngFor="let tag of project.tags" class="tag">
-            <span>{{tag}}</span>
-        </div>
-        </div>
-      </div>
-    </div>
+      </ng-template>
+    </ng-container>
   </div>
-  
+</div>

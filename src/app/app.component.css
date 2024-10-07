@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100; /* High z-index to stay above the cards */
   }
   
   .left h1 {
