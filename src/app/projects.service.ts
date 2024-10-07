@@ -51,7 +51,7 @@ export class ProjectsService {
       imageUrl: 'assets/csxl/csxllogo.jpg',
       link: '/project/5',
       tags: ['Angular', 'TypeScript', 'SQL', 'Python', 'HTML/CSS', 'SWE', 'Agile Development Methodology'],
-      longDescription: "Completed as a CSXL Software Engineering Intern at UNC for COMP 590 under the mentorship of Kris Jordan. The scope of the project was to design a new friendship feature for the Computer Science Experience Lab at UNC, where users could add friends and see when those friends were checked into the CSXL lab. Below you can see screenshots from a demo desplaying the friend-making progress. Let's be friends!",
+      longDescription: "Completed as a CSXL Software Engineering Intern at UNC for COMP 590 under the mentorship of Kris Jordan. The scope of the project was to design a new friendship feature for the Computer Science Experience Lab at UNC, where users could add friends and see when those friends were checked into the CSXL lab. Below you can see screenshots from a demo displaying the friend-making progress. Let's be friends!",
       extraPictureUrls: ['assets/csxl/csxl1.png']
     },
     {
