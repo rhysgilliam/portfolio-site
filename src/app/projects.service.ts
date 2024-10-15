@@ -62,6 +62,15 @@ export class ProjectsService {
       externalLink: 'https://rhysgilliam.itch.io/curse-of-the-vistani',
       tags: ['Twine', 'HTML/CSS', 'Writing', 'Game Design'],
     },
+    {
+      id: 7,
+      title: "Howl's Moving Castle - Scene Rescore",
+      description: "Re-written music for a scene from Howl's Moving Castle.",
+      imageUrl: 'assets/sophie.png',
+      externalLink: 'https://drive.google.com/file/d/1XgjOZOjy4fDvYJrjaRyWTvv6Lo7D8W1A/view?usp=sharing',
+      tags: ['Music', 'Composition', 'Ableton Live', 'Audio'],
+    },
+
   ];
 
   getProjects(): Project[] {
