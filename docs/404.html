@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Preserving the path
+      // Preserving the path after '/portfolio-site'
       var path = window.location.pathname.replace('/portfolio-site', '');
-      // Construct the URL to redirect to
-      var newUrl = '/portfolio-site/index.html';
-      // Redirect to the index.html with the original path appended as a hash
-      window.location.replace(newUrl + '#' + path);
+      // Redirect to index.html with the original path appended as a hash
+      var newUrl = '/portfolio-site/index.html#' + path;
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>
